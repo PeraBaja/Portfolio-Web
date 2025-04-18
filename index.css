@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/Oswald-Regular.ttf');
+}
+
+:root {
+    color-scheme: light dark;
+    --main-bg-color: 
+    --sec-bg-color: 
+    --font-color: 
+    --highlight-color: 
+}
+body {
+    background-color: #15180F;
+    color: #EBD3AE;
+    scroll-timeline: --fadeElements y;
+}
+html {
+  font-family: 'Oswald';
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-image: url('images/pera.png');
+  background-color: #A6F346;
+  background-repeat: repeat;
+  background-size: 250px;
+  background-blend-mode: overlay;
+  color: #15180F;
+  padding: 20px;
+  animation: fade-in 0.4s ease-in, moving-background 4s infinite linear;
+  border-radius: 15px;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes moving-background {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 250px 250px;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #15180F;
+    background-color: #EBD3AE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #A6F346;
+}
+
+main {
+    letter-spacing: 1px;
+}
+section {
+    padding: 50px 20px;
+    background-color: #32381D;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+section:nth-of-type(odd) {
+    animation-name: fadeInRight;
+    transform: translateY(50px);
+    view-timeline: --fade block;
+    animation-timeline: --fade;
+}
+section:nth-of-type(even) {
+    animation-name: fadeInLeft;
+    transform: translateY(50px);
+    view-timeline: --fade block;
+    animation-timeline: --fade;
+}
+
+.projects, .about, .technologies, .contact {
+    text-align: center;
+}
+
+.projects h2, .about h2, .technologies h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.technologies article {
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 10px;
+    padding: 1rem;
+    width: fit-content;
+}
+.technologies article:hover {
+    cursor: url('images/icons8-tijeras-50.png') 25 25, pointer;
+}
+.technologies article img {
+    margin: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border: 2px dashed #3b422e;
+    transition: box-shadow 0.2s ease-in, translate 0.2s ease-in;
+    transition-behavior: revert;
+
+}
+
+.technologies article img:hover {
+    box-shadow: -10px 10px 0 0 #32381D;
+    translate: 10px -10px;
+    
+}
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact input, .contact textarea, .contact button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #A6F346;
+    border-radius: 5px;
+    background-color: #15180F;
+    color: #EBD3AE;
+}
+
+.contact input[type="submit"] {
+    background-color: #381A0D;
+    color: #EBD3AE;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #A6F346;
+    color: #15180F;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #381A0D;
+    color: #EBD3AE;
+}
+
+footer a {
+    color: #A6F346;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #EBD3AE;
+}
