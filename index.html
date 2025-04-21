@@ -5,33 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamín Peralta</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Hero Section -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 800,
+    });
+    </script>
+
+
     <header class="hero">
         <div>
-            <h1>¡Hola, soy Benjamín Peralta!</h1>
+            <h1>¡<span>H</span>ola, soy Benjamín Peralta!</h1>
             <p>Desarrollador backend apasionado por crear experiencias únicas.</p>
         </div>
     </header>
 
     <main>
             <!-- Projects Section -->
-        <section class="projects">
+        <section class="projects" data-aos="fade-left">
             <h2>Proyectos</h2>
             <p>Una selección de mis trabajos más destacados:</p>
-            <div></div>
+            <div class="project-card">
+                <h3>Project name</h3>
+                <p>Resume</p>
+                <span>Used technologies</span>
+            </div>
         </section>
 
         <!-- About Me Section -->
-        <section class="about">
+        <section class="about" data-aos="fade-right">
             <h2>Acerca de mí</h2>
             <p>Un poco sobre mi experiencia, habilidades y objetivos profesionales.</p>
         </section>
 
         <!-- Technologies Section -->
-        <section class="technologies">
+        <section class="technologies" data-aos="fade-left">
             <h2>Tecnologías</h2>
             <p>Estas son algunas de las tecnologías y herramientas que utilizo:</p>
             <article>
@@ -43,7 +55,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="contact">
+        <section class="contact" data-aos="fade-right">
             <h2>Contacto</h2>
             <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
             <form action="mailto:benjaminp158@gmail.com" method="post" enctype="text/plain">
