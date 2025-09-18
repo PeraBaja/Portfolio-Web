@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,39 +8,92 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-    AOS.init({
-        duration: 800,
-    });
+        AOS.init({
+            duration: 800,
+        });
     </script>
 
 
     <header class="hero">
         <div>
+            <img src="images/Foto perfil.jpg" alt="Foto de perfil de Benjamín Peralta">
             <h1>¡<span>H</span>ola, soy Benjamín Peralta!</h1>
             <p>Desarrollador backend apasionado por crear experiencias únicas.</p>
         </div>
     </header>
 
     <main>
-            <!-- Projects Section -->
+        <!-- Projects Section -->
         <section class="projects" data-aos="fade-left">
-            <h2>Proyectos</h2>
-            <p>Una selección de mis trabajos más destacados:</p>
+            <div class=".header">
+                <h2>Proyectos</h2>
+                <p>Una selección de mis trabajos más destacados:</p>
+            </div>
+
             <div class="project-card">
-                <h3>Project name</h3>
-                <p>Resume</p>
-                <span>Used technologies</span>
+                <h3>Marketplace page</h3>
+                <figcaption>
+                    <img src="">
+                    <img src="">
+                </figcaption>
+                <p><i>Para practicar el desarrollo fullstack enfocandome en hacer endpoints robustos, con autenticación
+                        de
+                        usuario y administración de permisos por roles</i></p>
+                <a href="https://github.com/PeraBaja/Markeplace-page-full-stack"><img
+                        src="images/icons/pera github.svg"></a>
+            </div>
+            <div class="project-card">
+                <h3>Estadística Fácil</h3>
+                <figcaption>
+                    <img src="">
+                    <img src="">
+                </figcaption>
+                <p><i>Una libreria para hacer mediciones estadísticas basicas de datos</i></p>
+                <a href="https://github.com/PeraBaja/Markeplace-page-full-stack"><img
+                        src="images/icons/pera github.svg"></a>
+
+                <span></span>
+            </div>
+            <div class="project-card">
+                <h3>Coding Tracker</h3>
+                <figcaption>
+                    <img src="">
+                    <img src="">
+                </figcaption>
+                <p><i>Aplicación de consola para realizar un seguimiento de las horas que pasas programando.</i></p>
+                <a href="https://github.com/PeraBaja/Markeplace-page-full-stack"><img
+                        src="images/icons/pera github.svg"></a>
+
+                <span></span>
             </div>
         </section>
 
         <!-- About Me Section -->
         <section class="about" data-aos="fade-right">
             <h2>Acerca de mí</h2>
-            <p>Un poco sobre mi experiencia, habilidades y objetivos profesionales.</p>
+            <ul>
+                <li>Me recibí recientemente como técnico en programación en la UTN | Facultad Regional de Villa María.
+                </li>
+                <li>Me encanta programar videojuegos en mis tiempos libres para seguir aprendiendo mientras me divierto.
+                </li>
+                <li>Actualmente me encuentro buscando mi primera actividad laboral dentro del sector TI.</li>
+
+            </ul>
+
+            <ul>
+                <li>Me recibí recientemente como técnico en programación en la UTN | Facultad Regional de Villa María.
+                </li>
+                <li>Me encanta programar videojuegos en mis tiempos libres para seguir aprendiendo mientras me divierto.
+                </li>
+                <li>Actualmente me encuentro buscando mi primera actividad laboral dentro del sector TI.</li>
+
+            </ul>
+
         </section>
 
         <!-- Technologies Section -->
@@ -53,20 +107,10 @@
                 <img src="images/icons/Python.svg" alt="Python">
             </article>
         </section>
-
-        <!-- Contact Section -->
-        <section class="contact" data-aos="fade-right">
-            <h2>Contacto</h2>
-            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
-            <form action="mailto:benjaminp158@gmail.com" method="post" enctype="text/plain">
-                <input type="email" name="email" id="email" placeholder="Correo electrónico">
-                <textarea rows="5" cols="20" name="subject" id="subject" placeholder="Tu mensaje"></textarea>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
